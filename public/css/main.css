@@ -1,0 +1,88 @@
+/********* Fonts **********/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/****** Main Styling ******/
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	color: #00BCD4;
+	height: 56px;
+	margin: 0 0 14px 0;
+	text-align: center;
+}
+
+.result {
+	border: 1px solid black;
+	width: 75%;
+	margin: 10px auto;
+}
+
+.top-align {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.horizontal-center {
+	text-align: center;
+}
+
+.container {
+	margin: 10px;
+}
+
+h2 {
+	display: inline-block;
+	margin: 0 5px 0 0;
+}
+
+.going-btn {
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	color:#ffffff;
+	font-family:Arial;
+	text-shadow:0px 1px 0px #2f6627;
+	margin: 5px 0;
+	cursor: pointer;
+}
+
+#search {
+	width: 65%;
+}
+
+/****** Login Styling ******/
+
+.login {
+	margin: 86px auto 0 auto;
+	text-align: center;
+}
+
+.login-btn {	/* Styling for buttons */
+	width: 225px;
+	padding: 7px 5px;
+	margin: 8px;
+	color: white;
+	background-color: #00BCD4;
+	display: inline-block;
+	border: 0;
+	font-size: 14px;
+	border-radius: 3px;
+	font-weight: 500;
+}
+
+.login-btn:focus {	/* Remove outline when hovering over button */
+	outline: none;
+}
+
+.login-btn:active {	/* Scale the button down by 10% when clicking on button */
+	transform: scale(0.9, 0.9);
+	-webkit-transform: scale(0.9, 0.9);
+	-moz-transform: scale(0.9, 0.9);
+}

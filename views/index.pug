@@ -1,0 +1,25 @@
+doctype html5
+
+html
+	head
+		title FCC Nightlife Coordination app
+		link(href="/public/css/main.css" rel="stylesheet" type="text/css")
+
+	body
+		div(class="container horizontal-center")
+			form(method="GET")
+				input(type="search" id="search" name="location" value=searchQuery
+							autofocus)
+				button(type="submit") search
+
+		if searchResults
+			for result in searchResults
+				div(class="result")
+					a(href=result.url)
+						img(src=result.image_url)
+						h2(class="top-align") #{result.name}
+
+					form(method="GET" action="/going")
+						button(class="top-align going-btn" name="goingTo" value=result.yelp_id) #{result.going_count} going
+
+					p #{result.snippet_text}
